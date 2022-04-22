@@ -15,6 +15,7 @@ const DisplayWeather: FC<DisplayWeatherProps>= () => {
             <h1>Vi tri</h1>
             <h1>Nhiet do</h1>
             <h1>Thoi tiet</h1>
+            <h1></h1>
         </>
     )
 }
