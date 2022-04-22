@@ -1,7 +1,9 @@
 import React, {FC} from "react";
 
 type Weather = {
-
+    location:string,
+    temp:number,
+    weather:string
 }
 
 type DisplayWeatherProps = {
@@ -9,12 +11,13 @@ type DisplayWeatherProps = {
 }
 
 
-const DisplayWeather: FC<DisplayWeatherProps>= () => {
+const DisplayWeather: FC<DisplayWeatherProps>= ({weather}) => {
+    console.log(weather)
     return (
         <>
-            <h1>Vi tri</h1>
-            <h1>Nhiet do</h1>
-            <h1>Thoi tiet</h1>
+            <h1>{weather.location}</h1>
+            <h1>{weather.temp}</h1>
+            <h1>{weather.weather}</h1>
             <h1></h1>
         </>
     )

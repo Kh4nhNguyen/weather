@@ -8,7 +8,9 @@ function App() {
         <div className="App">
             <InputWeather/>
             <DisplayWeather weather={{
-
+                location:'Ha noi',
+                temp:40,
+                weather:'Nong'
             }}/>
         </div>
     );
